@@ -22,7 +22,7 @@ const connection = mysql.createConnection({
 });
 
 app.get("/", (_, res) => {
-  res.send("assignment-infiniticube");
+  res.send("Go to /users to get the available users");
 });
 
 

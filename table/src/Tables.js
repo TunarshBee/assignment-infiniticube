@@ -75,7 +75,7 @@ export default function Tables() {
                 <input type="checkbox" name="" id="" />
               </StyledTableCell>
               <StyledTableCell>#</StyledTableCell>
-              <StyledTableCell align="center">Date</StyledTableCell>
+              <StyledTableCell align="center">Date 	&#11015;</StyledTableCell>
               <StyledTableCell align="center">Status</StyledTableCell>
               <StyledTableCell align="center">Customer</StyledTableCell>
               <StyledTableCell align="center">Product Name</StyledTableCell>

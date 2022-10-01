@@ -23,8 +23,13 @@ const connection = mysql.createConnection({
   password: process.env.MYSQLPASSWORD, 
 });
 app.use(cors())
-app.get("/", (_, res) => {
-  res.send("assignment-infiniticube");
+
+app.get("/", (req, res) => {
+  res.send(`
+    <h1>Infiniticube Assignment</h1>
+    <h3>Navigate to /users to get the available users details </h3>
+    
+  `);
 });
 
 
@@ -78,7 +83,7 @@ app.get("/users", (req, res) => {
     });
 });
 
-app.listen(4000, async () => {
+app.listen(5000, async () => {
   await client.connect().then(() => console.log("Database Connected"));
   console.log("Server running ");
 });

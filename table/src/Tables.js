@@ -44,7 +44,7 @@ export default function Tables() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/users")
+      .get("http://localhost:5000/users")
       .then((e) => e.data.Data)
       .then((e) => {
         e.forEach((element) => {
